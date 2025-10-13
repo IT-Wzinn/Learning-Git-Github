@@ -1,0 +1,52 @@
+Commit 11: 	d910568 (HEAD -> main, origin/main, origin/HEAD) Merge branch 'main' of https://github.com/IT-Wzinn/Thumucmoitrenremote
+Commit 10: 	aeda910 Add 4.cpp
+Commit 9: 	eefc57a Create Fileremote
+Commit 8: 	cf5cdfb Merge branch 'Nhanh2'
+Commit 7: 	0fa6baf (Nhanh2) Add 3.cpp (Nhanh2)
+Commit 6: 	f0a47cf Add 3.cpp (main)
+Commit 5: 	8aec152 (origin/Nhanh2) Add 2.cpp (Nhanh1)
+Commit 4: 	64ec181 Merge branch 'nhanh1'
+Commit 3: 	10cbb24 (origin/nhanh1, nhanh1) Add 1.cpp (Nhanh1)
+Commit 2: 	aacd4e6 Add 1.cpp (main)
+Commit 1:	a3d447a Commitdautien
+ 
+
+*   d910568 (HEAD -> main, origin/main, origin/HEAD) Merge branch 'main' of https://github.com/IT-Wzinn/Thumucmoitrenremote
+|\  
+| * eefc57a Create Fileremote
+* | aeda910 Add 4.cpp
+|/  
+*   cf5cdfb Merge branch 'Nhanh2'
+|\  
+| * 0fa6baf (Nhanh2) Add 3.cpp (Nhanh2)
+* | f0a47cf Add 3.cpp (main)
+|/  
+* 8aec152 (origin/Nhanh2) Add 2.cpp (Nhanh1)
+*   64ec181 Merge branch 'nhanh1'
+|\
+| * 10cbb24 (origin/nhanh1, nhanh1) Add 1.cpp (Nhanh1)
+* | aacd4e6 Add 1.cpp (main)
+|/
+* a3d447a Commitdautien
+
+
+Hướng dẫn đọc Graph Repo này:
+Commit 1 : Commit gốc đầu tiên để làm việc
+Commit 2 : Add 1.cpp (main)   }      Commit 4: Có commit mới sau khi tách nhánh
+Commit 3 : Add 1.cpp (nhanh1) }           ==> Rẽ nhánh, tạo Commit merge               
+
+Commit 5 : Add 2.cpp (Nhanh2) }       Không có commit mới sau khi tách nhánh 
+                                    ==> Không rẽ nhánh, không tạo Commit merge 
+
+
+Commit 6 : Add 3.cpp (main)   }              Commit 8: Merge commit, conflict do có đủ 2 yếu tố 
+Commit 7 : Add 3.cpp (Nhanh2) }     Có commit mới sau khi tách nhánh, có xung đột dòng trong cùng 1 file 
+
+
+Commit 9 : Add 4.cpp          }           Commit 11: Muốn push nhưng gặp Non fast Foward ( Commit mới nhất của Local ≠ Remote (Add 4.cpp ≠ Create Fileremote) )
+Commit 10 : Create Fileremote }                      ==> Phải pull nhưng khi pull thì cũng có commit mới sau commit chung với nhánh main nên cũng tạo Merge commit rồi mới push tiếp lên 
+
+
+
+
+
